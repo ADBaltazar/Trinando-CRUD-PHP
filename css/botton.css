@@ -1,0 +1,22 @@
+
+.section-comentario{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.746);
+ 
+}
+.rodape-interno{
+    width: 90%;
+    margin: 0 auto;
+}
+.rodape-interno form{
+    width: 50%;  
+}
+.titulo-comentar{
+    padding: 20px 15px;
+    color: white;
+    text-align: left;
+    font-size: 25px ;  
+}
+#caixatComent{
+    background-color: white;
+}

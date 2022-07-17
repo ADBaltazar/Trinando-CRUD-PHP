@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./css/estiloTop.css">
+    <title>Official CfTech</title>
+
+    <style>
+        .conteiner-1{
+            position: relative;
+        }
+        .formlogin{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(68, 68, 68, 0.267);
+            display: none;
+        }
+
+        .formlogin .formulario-logar{
+            border: none;
+            position: fixed;
+            margin: 12% 20%; 
+            width: 60%; 
+            background-color: /*rgba(230, 223, 223, 0.959)*/rgb(240, 240, 240); 
+        }
+        .formulario-logar form{
+            width: 60%;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            padding: 20px; 
+            clear: both;
+        }
+        .textbox{
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            border: none;
+            margin-top: 10px;
+        }
+        .desclabel{
+            text-decoration: none;
+            padding: 10px 0;
+            color: rgb(43, 42, 42);
+            font-size: 18px; 
+        }
+        .desclabel span{
+            color: red; 
+        }
+
+        #botao-confirme{
+            cursor: pointer;
+            width: 35%;  
+            font-size: 18px; 
+            border: 1px solid rgb(11, 112, 206);
+        }
+        #botao-confirme:hover{
+             
+            color: white; 
+            background-color: rgb(11, 112, 206);
+        }
+        .link-esqueci-senha{
+            margin-left: 15%;
+            text-decoration: none;
+            padding: 10px 0; 
+            font-size: 18px; 
+            color: rgb(11, 112, 206);
+        }
+        .foto-ilustrativa{
+            position: absolute;
+            top: 0;
+            right: 0%;
+            width: 40%;
+            border: 2px solid transparent;
+            height: 99%;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            background: url(./img/0-business-people-or-doctor-talking-to-customer-and-using-laptop-at-office-room_1531477669-850x514.jpg) no-repeat;
+        }
+        #fromLogin{
+            border: 2px solid red;
+            position: relative;
+        }
+        #Fechar{
+          float: right;
+          padding: 0 5px;
+          font-size: 20pt;
+          cursor: pointer;
+          background-color: rgba(0, 0, 0, 0.514);
+          color: white;
+          text-decoration: none;
+        }
+        #Fechar:hover{
+          color: red; 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="conteiner-1">
+     
+        <header>
+            <div class="fundo-auxliar">
+                <div class="redes-social">
+                    <a href=""><img src="./img/fb.png" alt="" class="link-rede-social"></a>
+                    <a href=""><img src="./img/whatsApp2.jpg" alt="" class="link-rede-social"></a>
+                </div>
+            </div>
+            <div class="conteiner-menu">
+                <label for="" class="titulo-pagina">CFPAP-Solenne</label>
+                <nav class="menu-navegacao">
+                    <ul>
+                        <li><a href="">Principal</a></li>
+                        <li><a href="">Produtos</a></li>
+                        <li><a href="">Noticias</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="#" class="login" onclick="abrirLog()">Iniciar Sessão</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        <div class="conteiner-externo">
+
+        </div>
+        <div class="conteiner-mille">
+            <div class="capa">
+                <img src="./img/formacao-financiada-portugal2020.jpg" alt="" class="foto-capa">  
+
+                <div class="formlogin" id="AbrirLogin" onclick=" ">
+                    
+                        <div class="formulario-logar" >
+                            <div class="foto-ilustrativa">
+                                <a href="" class="titulo-quem-somos" id="Fechar">X</a>
+                            </div>
+                            <form action="">
+                                <center>
+                                    <label for="" class="titulo-quem-somos">Iniciar Sessão</label>
+                                   
+                                </center>
+                                <p>
+                                    <Label class="desclabel">Acessar como <span> *</span></Label>
+                                    <select name="" id="" class="textbox">
+                                        <option value="" >Perfil de acesso</option>
+                                        <option value="">Administrador</option>
+                                        <option value="">Financeiro</option>
+                                        <option value="">Secretario</option> 
+
+                                    </select>
+                                </p>
+                                <p>
+                                    <Label class="desclabel">Usuario <span> *</span></Label>
+                                    <input type="email" placeholder="Email Valido" class="textbox" required>
+                                </p>
+                                <p>
+                                    <Label class="desclabel">Senha de Usuario <span> *</span></Label>
+                                    <input type="password" placeholder="Digite sua Senha " class="textbox" required>
+                                </p>
+                                <p>
+                                    
+                                    <input type="submit" value="Confirmar" class="textbox" id="botao-confirme">
+
+                                    <a href="Painel1Inscrição.html" class="link-esqueci-senha">Esqueci minha Senha !</a>
+                                </p>
+                            </form>
+                           
+                        </div>
+
+                </div>
+            </div>
+            <div class="fundo-auxiliar">
+                <center>
+                    <h2 for="" class="titulo-quem-somos">Quem Somos ?</h2>
+                </center>
+            </div>
+            
+            <div class="seccao-quem-somos"> 
+                    
+                    <div class="tamplets">
+                        <div class="tampleiter-animado1">
+                            <div class="descricao1">
+                                <h1>Titualar 1</h1>
+                            </div>
+                            <div class="foto1">
+                                <img src="./img/formacao-financiada-portugal2020.jpg" alt="">
+                            </div>
+                            <div class="foto1">
+                                <img src="./img/formacao-financiada-portugal2020.jpg" alt="">
+                            </div>
+                            <div class="descricao1">
+                                <h1>Titualar 2</h1>
+                            </div>
+                        </div>
+                        <div class="tampleiter-animado1">
+                            <div class="descricao1">
+
+                            </div>
+                            <div class="foto1">
+
+                            </div>
+                            <div class="foto1">
+                                
+                            </div>
+                            <div class="descricao1">
+
+                            </div>
+                        </div>
+                        <div class="tampleiter-animado1">
+                            <div class="descricao1">
+
+                            </div>
+                            <div class="foto1">
+
+                            </div>
+                            <div class="foto1">
+                                
+                            </div>
+                            <div class="descricao1">
+
+                            </div>
+                        </div>
+                        <div class="tampleiter-animado1">
+                            <div class="descricao1">
+
+                            </div>
+                            <div class="foto1">
+
+                            </div>
+                            <div class="foto1">
+                                
+                            </div>
+                            <div class="descricao1">
+
+                            </div>
+                        </div>
+                        <div class="tampleiter-animado1">
+                            <div class="descricao1">
+                                <h1>Titualar 1</h1>
+                            </div>
+                            <div class="foto1">
+                                <h1>Foto de Capa 1</h1>
+                            </div>
+                            <div class="foto1">
+                                <h1>Foto de Capa 2</h1>
+                            </div>
+                            <div class="descricao1">
+                                <h1>Titualar 2</h1>
+                            </div>
+                        </div>
+                         
+                    </div> 
+            </div>
+            <div class="fundo-auxiliar">
+            
+            </div>
+        </div>
+      
+        <footer class="rodapé">
+
+        </footer>
+
+
+    </div>
+    <script src="./js/script01.js"></script>
+</body>
+</html>

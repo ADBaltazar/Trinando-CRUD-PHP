@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./css/estiloTop.css">
+ 
+    <link rel="stylesheet" href="./css/Estilizaçãopadrao.css">
+    <link rel="stylesheet" href="./css/styleform.css">
+    <link rel="stylesheet" href="./css/botton.css">
+    <title>Official CfTech</title>
+
+    <style>
+         .paineldados{
+            margin: 0 auto;
+            width: 90%;
+         }
+        .tble-dados{
+            width: 100%;
+            
+        }
+        .tble-dados td{
+            padding: 10px;
+            border: 0px solid rgb(243, 242, 242);
+        }
+        .cl-cod{
+            background-color: rgb(11, 112, 206);
+            text-align: center;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+        .cl-cod2{
+             
+            text-align: center;  
+            font-weight: bold;
+        }
+        .painel-controlo{
+
+            box-sizing: border-box; 
+            margin: 0 auto;
+            width: 100%;
+            border: 2px solid transparent;
+            padding: 15px;
+        }
+        .controlo-interno{
+            width: 70%;
+            margin: 0 auto;
+        }
+        #txtbusca{
+            width: 79%;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: rgba(207, 204, 204, 0.185);
+            border: .1px solid rgba(0, 0, 0, 0.198);
+            margin-top: 10px;
+          
+        }
+        #tbbusca{
+            border-left: none;
+            margin-left: -5px;
+            width: 20%;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: rgba(207, 204, 204, 0.185);
+            border: .1px solid rgba(0, 0, 0, 0.198); 
+            cursor: pointer;
+        }
+        #tbbusca:hover{
+             background-color: rgb(11, 112, 206);
+             color: white;
+        }
+        .desclabel{
+            margin-right: 15px;
+        }
+        .footer-inferior{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="conteiner-1">
+     
+        <header id="cabeçalho">
+            <div class="fundo-auxliar" >
+                <div class="redes-social" >
+                    <a href=""><img src="./img/fb.png" alt="" class="link-rede-social"></a>
+                    <a href=""><img src="./img/whatsApp2.jpg" alt="" class="link-rede-social"></a>
+                </div>
+            </div>
+            <div class="conteiner-menu" >
+                <label for="" class="titulo-pagina">CFPAP-Solenne</label>
+                <nav class="menu-navegacao">
+                    <ul> 
+                        <li><a href="#">Relatório</a></li>
+                        <li><a href="Painel1Inscrição.html">Inscrição</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="Login.html" class="login">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        <div class="conteiner-externo">
+           
+        </div>
+        <div class="conteiner-mille">
+           <!--
+            <div class="aba-lateral" hidden>
+                <ul>
+                    <li><a href="" class="opcao1">Inscrição</a></li>
+                    <li><a href="" class="opcao2">Inscrição</a></li>
+                    <li><a href="" class="opcao1">Inscrição</a></li>
+                </ul>
+            </div>
+            --> 
+
+            <div class="menu-lateral" hidden>
+                <ul>
+                    <li><label for="desc1"><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"></label><a href="" id="desc1">Descricao1</a></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    
+                </ul>
+            </div>
+            <div class="conteudo-systema">
+                <div class="paineldados"> 
+                        <div class="painel-controlo">
+                            <div class="controlo-interno">
+                                <form action="">
+                                    <p>
+                                        <input type="text" name="pesquisa" class="" id="txtbusca" placeholder="O que deseja buscar ? " list="listabusca" required>
+                                        <datalist id="listabusca"> 
+                                                <option value="Informática"></option>
+                                                <option value="Cantabilidade"></option>
+                                                <option value="Decoração"></option> 
+                                        </datalist>
+                                        <input type="submit" name="" value="Buscar" id="tbbusca" >
+                                    </p>
+                                    
+                                    <p>
+                                        <input type="radio" name="filter" class="" id="filter1"  checked required value="">
+                                        <label for="filter1" class="desclabel">Curso</label>
+
+                                        <input type="radio" name="filter" class="" id="filter2" value="">
+                                        <label for="filter2" class="desclabel">Formando</label>
+
+                                        <input type="radio" name="filter" class="" id="filter3"    value="">
+                                        <label for="filter3" class="desclabel">Formandor</label>
+                                    </p> 
+                                </form>
+                            </div>
+                        </div> 
+                        <center>
+                            <label for="" class="ttform" id="ttinscricao">Painel Financeiro</label>
+                        </center>
+                        <div class="eta1" id="paineldados">
+                            
+                            
+                             
+                        </div>
+ 
+                   
+                    <div class="fotoIlustracao" hidden>
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="fundo-auxiliar">
+            
+            </div>
+        </div>
+
+        
+        <div class="section-comentario">
+            <div class="rodape-interno">
+                <form action="">
+                   <p>
+                    <label for="" class="titulo-comentar">O que achou do Site ?</label>
+                   </p>
+                    <textarea name="" id="caixatComent" cols="30" rows="5" class="textbox" placeholder="Por favor escreva para nós">
+        
+                    </textarea>
+                    <input type="submit" value="Pesquisar" hidden>
+                </form>
+            </div>
+        </div>
+               
+        <footer class="rodapé"  hidden>
+
+        </footer>
+    </div>
+    <script src="./js/script01.js"></script>
+</body>
+</html>

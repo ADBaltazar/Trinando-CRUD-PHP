@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./css/estiloTop.css">
+    <link rel="stylesheet" href="./css/Estilizaçãopadrao.css">
+    <link rel="stylesheet" href="./css/styleform.css">
+    <title>Official CfTech</title>
+
+    <style>
+        .fotoIlustracao{
+            margin-top: 5%;
+            width: 33%;
+            height: 550px;
+            border: 2px solid transparent;
+            float: right;
+            background: url(./img/fundo7.jpg) no-repeat center;
+            background-size: 99% 550px;
+        }
+        .quadro-foto{
+                border: 2px solid rgb(199, 199, 199);
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+                background: url(./img/fotopadrão.jpg) no-repeat center;
+                background-size: 100% 100%;
+            }
+    </style>
+</head>
+<body>
+    
+    <div class="conteiner-1">
+     
+        <header id="cabeçalho">
+            <div class="fundo-auxliar" >
+                <div class="redes-social" >
+                    <a href=""><img src="./img/fb.png" alt="" class="link-rede-social"></a>
+                    <a href=""><img src="./img/whatsApp2.jpg" alt="" class="link-rede-social"></a>
+                </div>
+            </div>
+            <div class="conteiner-menu" >
+                <label for="" class="titulo-pagina">CFPAP-Solenne</label>
+                <nav class="menu-navegacao">
+                    <ul>
+                        <li><a href="CadastroFormador.html">Formador</a></li>
+                        <li><a href="Painel1Dados.html">Relatório</a></li>
+                        <li><a href="#painelInscricao">Inscrição</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="Login.html" class="login">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        <div class="conteiner-externo">
+           
+        </div>
+        <div class="conteiner-mille">
+           <!--
+            <div class="aba-lateral" hidden>
+                <ul>
+                    <li><a href="" class="opcao1">Inscrição</a></li>
+                    <li><a href="" class="opcao2">Inscrição</a></li>
+                    <li><a href="" class="opcao1">Inscrição</a></li>
+                </ul>
+            </div>
+            --> 
+
+            <div class="menu-lateral" hidden>
+                <ul>
+                    <li><label for="desc1"><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"></label><a href="" id="desc1">Descricao1</a></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    
+                </ul>
+            </div>
+            <div class="conteudo-systema">
+                <div class="inscricao"id="painelInscricao">
+
+                    <form action="" >
+                        <center>
+                            <label for="" class="titulo-pagina2" id="ttinscricao">Cadastro de Formando</label>
+                        </center>
+                        <div class="eta1" id="etapa001">
+                           <fieldset class="fieldsetPrincipal">
+                               <legend  class="ttform">Dados Pessoais</legend>
+                                    <p>
+                                        <label for="" class="desclabel">Nome <span> *</span></label>
+                                        <input type="text" name="nome" class="textbox" id="txtnome" placeholder="Nome de formando" required onblur="captura()">
+                                    </p>
+                                    <p hidden>
+                                        <label for="" class="desclabel">Sobrenome <span> *</span></label>
+                                        <input type="text" name="sobrenome" class="textbox" id="txtsobrenome" placeholder="Sobrenome de formando">
+                                    </p>
+                                    <p>
+                                        <label for="" class="desclabel">Apelido <span> *</span> </label>
+                                        <input type="text" name="apelido" class="textbox" id="txtapelido" placeholder="Apelido de formando" onblur="captura()">
+                                    </p>
+                                    <p>
+                                        <input type="radio" name="genero" class="" id="txtmasc" placeholder="Nome de formando" checked required>
+                                        <label for="txtmasc" class="desclabel">Masculino</label>
+                                        <input type="radio" name="genero" class="" id="txtfem" placeholder="Nome de formando">
+                                        <label for="txtfem" class="desclabel">Masculino</label>
+                                    </p>
+                                    
+                                    <p>
+                                        <label for="" class="desclabel">Identificação </label>
+                                        <input type="text" name="nome" class="textbox" id="txtnome" placeholder="Nome de formando">
+                                    </p>
+                                    <p>
+                                        <label for="" class="desclabel">Data de Nascimento</label>
+                                        <input type="date" name="datanasc" class="textbox" id="txtdata" placeholder="Nome de formando">
+                                    </p>
+                           </fieldset>
+                            <p class="p-botao">
+                                        
+                                <input type="button" value="Proxima Etapa" class="textbox" id="botao-confirme-2" onclick="encaminhar()" name="bt001"> 
+                                <input type="reset" value="Limpar dados" class="textbox" id="botao-confirme-23"> 
+                            </p>
+                        </div>
+
+                        <div  id="etapa002">
+                            <fieldset class="fieldsetPrincipal">
+                                <legend  class="ttform">Dados do Curso</legend>
+                                    <p>
+                                         <label for="" class="desclabel">Curso <span> *</span></label>
+                                         <input type="text" name="curso" class="textbox" id="txtcurso" placeholder="Informe o cursos" list="listaCurso">
+                                          <datalist id="listaCurso"> 
+                                                    <option value="Informática"></option>
+                                                    <option value="Cantabilidade"></option>
+                                                    <option value="Decoração"></option> 
+                                          </datalist>
+                                    </p> 
+                                    <fieldset><legend>Selecione o Periodo</legend>
+                                        <p>
+                                            <input type="radio" name="periodo" class="" id="manha"  checked required>
+                                            <label for="manha" class="desclabel">Manhã</label>
+                                            <input type="radio" name="periodo" class="" id="tarde" >
+                                            <label for="tarde" class="desclabel">Tarde</label>
+                                            <input type="radio" name="periodo" class="" id="noite">
+                                            <label for="noite" class="desclabel">Noite</label>
+                                        </p>
+                                    </fieldset>
+                                     
+                                     
+                                        <p>
+
+                                            <label for="Pagcart" class="desclabel">Pagamento de Cartão <span> *</span></label> 
+                                            <input type="checkbox" name="pagcart" class="" id="Pagcart"   required>
+                                            <label for="Pagcart" class="desclabel">Sim/Não</label>  
+
+                                        </p>
+                                        <p> 
+
+                                            <label for="Pagcart" class="desclabel">Pagamento de Material de Apoio <span> *</span></label> 
+                                            <input type="checkbox" name="pagMat" class="" id="PagMat"   >
+                                            <label for="PagMat" class="desclabel">Sim/Não</label> 
+
+                                        </p> 
+
+                                    <fieldset class="textajust"><legend>Pagamento do Curso</legend>
+                                        
+                                            <p>
+                                                <label for="" class="desclabel">1ª Prestação <span> *</span></label>
+                                                <input type="number" name="Prestacao1" class="textbox" id="txtpag" placeholder="Informe a primeira prestação ">
+                                            </p>
+                                            <p>
+                                                <label for="" class="desclabel">1ª Prestação <span> *</span></label>
+                                                <input type="number" name="Prestacao2" class="textbox"  id="txtpag" placeholder="Informe a segunda prestação ">
+                                                
+                                            </p> 
+                                    </fieldset> 
+                                    
+                            </fieldset>
+                            <p>
+                                <input type="reset" value="Voltar" class="textbox" id="botao-confirme-234" onclick="reencaminhar()">        
+                                <input type="button" value="Proximo" class="textbox" id="botao-confirme-2" name="bt-Painel002" onblur="captura()" onclick="encaminharfinal()"> 
+                                <input type="reset" value="Cancelar" class="textbox" id="botao-confirme-23"> 
+                            </p>
+                        </div>
+ 
+                        <div  id="etapa003">
+                            <fieldset class="fieldsetPrincipal">
+                                 
+                                    
+                                    <fieldset><legend class="ttform">Carregar foto de perfil</legend>
+                                        <div class="quadro-perfil"> 
+                                        <label for="fotoperfil"  >
+                                            <div for="fotoperfil" class="quadro-foto" ></div>
+                                        </label>
+                                      
+                                        </div>
+                                        <input type="file" name="fotoperfil" id="fotoperfil" class="textbox">
+                                    </fieldset>
+                                    
+                                    
+                            </fieldset>
+                            <p>
+                                 <input type="button" value="Concluido" class="textbox" id="botao-concluir" name="bt-Painel003" onblur="captura()"> 
+                            </p>
+                        </div>
+                    </form>
+                    <div class="fotoIlustracao">
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="fundo-auxiliar">
+            
+            </div>
+        </div>
+        
+        <div class="footer-inferior">
+            <div class="inform">
+                <label for="" class="desc-rodape-infer">Centro de Formação Profissional Amor & Paz</label>
+                <form action="">
+                    <input type="text" name="s" id="" class="txtbusca" placeholder="Pesquique por algum registro">
+                    <input type="submit" value="Pesquisar" hidden>
+                </form>
+            </div>
+        </div>
+        <footer class="rodapé" hidden>
+
+        </footer>
+    </div>
+    <script src="./js/script01.js"></script>
+</body>
+</html>

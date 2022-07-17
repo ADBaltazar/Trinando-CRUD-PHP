@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./css/estiloTop.css">
+    <link rel="stylesheet" href="./css/Estilizaçãopadrao.css">
+    <link rel="stylesheet" href="./css/styleform.css">
+    <title>Official CfTech</title>
+
+    <style>
+        
+        .conteudo-systema{
+            clear: both;
+        }
+        .fotoIlustracao2{
+            margin-top: 5%;
+            width: 36%;
+            height: 100%;
+            border: 2px solid transparent;
+            float: right; 
+            background: url(./img/) no-repeat center;
+            background-color: rgba(231, 231, 231, 0.239);
+            background-size: 100% 100%; 
+            
+            box-sizing: border-box;
+            clear: both;
+          
+            
+        }
+        .quadro-foto{
+                border: 2px solid rgb(199, 199, 199);
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+                background: url(./img/fotopadrão.jpg) no-repeat center;
+                background-size: 100% 100%;
+            }
+            .menu-control{
+
+            width: 100%;  
+            display: block;  
+            box-sizing: border-box;
+            background-color:rgb(235, 235, 235);
+            text-align: right; 
+        }
+         
+        .menu-control ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 18px 15px;
+            text-decoration: none; 
+            color: rgb(43, 42, 42);
+            font-size: 18px;
+             
+        } 
+        .menu-control ul li:hover{
+            cursor: pointer; 
+            color: rgb(11, 112, 206);
+            background-color: white;
+            border-top: .1px solid white;
+        }
+        #ttinscricao2{
+            padding: 15px;
+        }
+        .ttform2{
+            text-align: center;
+            font-size: 30px ;
+            line-height: 65px; 
+            color: rgb(92, 91, 91); 
+            color: rgb(11, 112, 206);
+        }
+        #formCat {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box; 
+        }
+        .barra{
+            border-bottom: 3px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="conteiner-1">
+     
+        <header id="cabeçalho">
+            <div class="fundo-auxliar" >
+                <div class="redes-social" >
+                    <a href=""><img src="./img/fb.png" alt="" class="link-rede-social"></a>
+                    <a href=""><img src="./img/whatsApp2.jpg" alt="" class="link-rede-social"></a>
+                </div>
+            </div>
+            <div class="conteiner-menu" >
+                <label for="" class="titulo-pagina">CFPAP-Solenne</label>
+                <nav class="menu-navegacao">
+                    <ul>
+                        <li><a href="CadastroCurso.html">Cursos</a></li>
+                        <li><a href="Painel1Dados.html">Relatório</a></li>
+                        <li><a href="#painelInscricao">Inscrição</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="Login.html" class="login">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        <div class="conteiner-externo">
+           
+        </div>
+        <div class="conteiner-mille">
+           <!--
+            <div class="aba-lateral" hidden>
+                <ul>
+                    <li><a href="" class="opcao1">Inscrição</a></li>
+                    <li><a href="" class="opcao2">Inscrição</a></li>
+                    <li><a href="" class="opcao1">Inscrição</a></li>
+                </ul>
+            </div>
+            --> 
+
+            <div class="menu-lateral" hidden>
+                <ul>
+                    <li><label for="desc1"><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"></label><a href="" id="desc1">Descricao1</a></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    <li><label for=""><img src="./img/id_card_view.ico" alt="" class="incon-descrcao"><a href="">Descricao1</a></label></li>
+                    
+                </ul>
+            </div>
+            <div class="conteudo-systema">
+                <div class="inscricao"id="painelInscricao">
+
+                    <form action="" method="post" id="FCurso">
+                        <center id="ttinscricao2">
+                            <label for="" class="titulo-pagina2" id="ttinscricao">Cadastramento de Curso</label>
+                            
+                        </center>
+                        <div class="eta1" id="etapa001">
+                           <fieldset class="fieldsetPrincipal">
+                               <legend  class="ttform">Cadastro de Curso</legend>
+                                    <p>
+                                            <label for="" class="desclabel">Selecione a Categoria do Curso <span> *</span></label>
+                                            <select type="text" name="categoriaCurso" class="textbox" id="txtcurso">
+                                            
+                                                    <option value="Técnico médio" >Selecione a categoria</option>
+                                                    <option value="Técnico Superior"></option>
+                                                    <option value="Outro"></option> 
+                                            </select>
+                                    </p>
+                                    <p>
+                                        <label for="" class="desclabel">Designação do Curso<span> *</span></label>
+                                        <input type="text" name="nomecurso" class="textbox" id="txtnome" placeholder="Informe o Nome do curso" required >
+                                    </p>
+                                    <p >
+                                        <label for="" class="desclabel">Carga Horaria <span> *</span></label>
+                                        <input type="text" name="cargaHoraria" class="textbox" id="txtsobrenome" placeholder="Informe o total de Horas">
+                                    </p>
+                                    <p>
+                                        <label for="" class="desclabel">Preço do curso <span> *</span> </label>
+                                        <input type="text" name="precocurso" class="textbox" id="txtapelido" placeholder="Informe o Custo do curso" onblur="" required>
+                                    </p>
+                                     
+                           </fieldset>
+                            <p class="p-botao">
+                                        
+                                <input type="button" value="Confirmar o Cadastro" class="textbox" id="botao-concluir" name="bt-Painel003" onclick="cadastrar()"> 
+ 
+                            </p>
+                        </div>
+
+                    </form>
+                    <div class="fotoIlustracao2">
+                        <form action="#" id="formCat">
+                        <div  id="etapa0023">
+                         
+                                <fieldset class="fieldsetPrincipal">
+                                    <legend  class="ttform2">Cadastro de Categoria</legend>
+                                         <hr class="barra">   
+                                        <p>
+                                            
+                                            <label for="" class="desclabel">Categoria de Curso <span> *</span></label>
+                                            <input type="text" name="CatCuros" class="textbox" id="txtinst" placeholder="Informe a Categoria do Curso" required>
+                                             
+                                        </p>
+                                        <p> 
+                                            
+                                                <label for="" class="desclabel">Descrição da Categoria <span> *</span></label> 
+                                                <textarea name="descricao" id="" cols="30" rows="10" class="textbox" placeholder="Informe a Instituição em que se formou">
+    
+                                                </textarea>
+                                        </p>
+                                         
+                                                                           
+                                </fieldset>
+                                <p>
+                                    <input type="button" value="Cadastrar" class="textbox" id="botao-confirme-" name="bt-Painel002"  > 
+                                </p>
+                           
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="fundo-auxiliar">
+            
+            </div>
+        </div>
+        
+        <div class="footer-inferior">
+            <div class="inform">
+                <label for="" class="desc-rodape-infer">Centro de Formação Profissional Amor & Paz</label>
+                <form action="">
+                    <input type="text" name="s" id="" class="txtbusca" placeholder="Pesquique por algum registro">
+                    <input type="submit" value="Pesquisar" hidden>
+                </form>
+            </div>
+        </div>
+        <footer class="rodapé" hidden>
+
+        </footer>
+    </div>
+    <script src="./js/script01.js"></script>
+</body>
+</html>

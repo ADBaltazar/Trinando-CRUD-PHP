@@ -1,0 +1,131 @@
+body{
+    background-color: rgba(207, 204, 204, 0.185);
+}
+.inscricao{ 
+    margin: 0 auto;
+    width: 80%; 
+    
+}
+
+ .inscricao form{
+    display: inline-block;
+    width: 63%; 
+    box-sizing: border-box;
+    padding: 20px; 
+    clear: both;
+    box-shadow: .5px .5px 1px  rgba(0, 0, 0, 0.274);
+   
+}
+.textbox{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgba(207, 204, 204, 0.185);
+    border: .1px solid rgba(0, 0, 0, 0.198);
+    margin-top: 10px;
+}
+.desclabel{
+    text-decoration: none;
+    padding: 10px 0;
+    color: rgb(46, 46, 46);
+    font-size: 18px; 
+}
+.desclabel span{
+    color: red; 
+}
+
+#botao-confirme-2{
+    float: right;
+    width: 200px;
+    cursor: pointer;  
+    font-size: 17px; 
+    border: .01px solid rgb(11, 112, 206);
+}
+#botao-confirme-23{
+    width: 170px;
+    cursor: pointer;  
+    font-size: 17px; 
+    border: .01px solid red;
+}
+#botao-confirme-234{
+    width: 180px;
+    cursor: pointer;  
+    font-size: 17px; 
+  /*  border: .01px solid rgb(138, 136, 136);*/
+  border: none;
+}
+#botao-confirme-
+{
+    
+    cursor: pointer;  
+    font-size: 17px; 
+    border: none;
+    box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.603);
+}
+#botao-confirme-:hover
+{ 
+    background-color:  rgb(11, 112, 206);
+    color: white;
+}
+#botao-confirme-2:hover{
+     
+    color: white; 
+    background-color: rgb(11, 112, 206);
+}
+#botao-confirme-23:hover{
+     
+     color: white; 
+     background-color: red;
+ }
+center{
+    
+    background-color:rgb(11, 112, 206) ;
+}
+
+center #ttinscricao{
+    color: rgb(221, 221, 221);
+}
+fieldset{
+    border: .01px solid rgba(43, 57, 100, 0.212);
+    padding: 0 5px ;
+} 
+.fieldsetPrincipal{
+    border: none;
+    padding: 0 5px;
+}
+.p-botao{
+    padding: 3px;
+}
+legend{   
+    font-size: 20px ;
+    line-height: 45px;  
+}
+.ttform{
+    font-size: 30px ;
+    line-height: 65px; 
+    color: rgb(87, 87, 87);
+}
+.textajust input
+{
+    width: 60%;
+}
+.quadro-perfil{
+    border: 2px solid transparent;
+    margin: 0 auto;
+    width: 260px;
+    height: 280px;
+}
+
+#botao-concluir{
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;  
+    font-size: 20px;
+    /*background-color:  green; */
+    background-color:rgb(11, 112, 206) ;
+    color: white;       
+}
+#botao-concluir:hover{ 
+    background-color:  rgb(4, 90, 4);
+    
+}

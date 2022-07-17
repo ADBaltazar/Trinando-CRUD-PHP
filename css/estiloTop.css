@@ -1,0 +1,183 @@
+@charset "urf-8";
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(200, 200, 200);
+}
+.conteiner-externo{
+    height: 150px;
+}
+
+.fundo-auxliar{
+    width: 100%;
+    height: 60px;
+    padding: 0 2px;
+    background-color: rgb(32, 31, 31);
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.918);
+    height: 150px;
+    position: fixed; 
+    width: 100%;
+    border-bottom: 1px solid rgb(119, 118, 118);
+
+}
+.redes-social{ 
+    display: none;
+    line-height: 50px;
+    text-align: right;
+    width: 85%;
+    margin: 0 auto; 
+}
+.link-rede-social{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px 5px; 
+    line-height: 40px;
+}
+.conteiner-menu{
+    width: 85%;
+    height: 100px;
+    margin: 0 auto; 
+    clear: both;
+    
+}
+.titulo-pagina2{
+    font-size: 33px ;
+    line-height: 65px;
+    font-weight: bold;
+    color: rgb(11, 112, 206);
+}
+.titulo-pagina{
+    font-size: 40px ;
+    line-height: 95px;
+    font-weight: bold;
+    color: rgb(11, 112, 206);
+}
+.menu-navegacao{
+    float: right;
+    line-height: 100px;
+
+}
+.menu-navegacao ul{
+    margin: 0;
+    padding: 0;
+}
+.menu-navegacao ul li{
+    float: left;
+    list-style: none;
+}
+.menu-navegacao ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: rgb(43, 42, 42);
+    font-size: 18px; 
+}
+.menu-navegacao ul li a:hover{
+    color: rgb(11, 112, 206);
+}
+.login{
+    border: 1px solid rgb(11, 112, 206);
+    padding: 12px 17px;
+}
+
+/***********ESTILIZANDO A IMAGEM DE CAPA *******/
+.conteiner-mille{
+    width: 100%;
+    background-color: white; 
+}
+.capa{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%; 
+}
+.foto-capa{
+    width: 100%;
+    height: 450px;
+}
+/*** SECÇAÕ QUEM SOMOS ****/
+ .titulo-quem-somos{
+    font-size: 35px ; 
+    color: rgb(10, 100, 184); 
+ }
+.seccao-quem-somos{
+     margin: 0 auto;
+     padding: 0px 0px 25px 0px;
+     width: 85%;
+     height: 400px;
+    overflow:  hidden;
+}
+ .tamplets{
+    width: 500%; 
+    height: 100%;
+    animation-name: carrossel;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+ }
+ .tampleiter-animado1{
+      width: 19.88%;
+      height: 100%;
+      border: 2px dashed transparent;
+      display: inline-block;
+      clear: both;
+ } 
+ /********* Subdivisão dos templets******/
+.tampleiter-animado1 div{
+     
+    height: 100%;
+    float: left;
+    border: 2px solid red;
+}
+.descricao1{
+    width: 23%; 
+}
+.foto1{
+    width:26%;;
+}
+.foto1 img{
+    width: 100%;
+    height: 100%;
+}
+
+/****** Fazendo efeito acontecer *****/
+@keyframes carrossel{
+  0%{
+      margin-left: 0%;
+    }
+    20%{
+        margin-left: 0%;
+    }
+    25%{
+        margin-left: -100%;
+    }
+    45%{
+        margin-left: -100%;
+    }
+    50%{
+        margin-left: -200%;
+    }
+    70%{
+        margin-left: -200%;
+    }
+    75%{
+        margin-left: -300%;
+    }
+    95%{
+        margin-left: -300%;
+    }
+    100%{
+        margin-left: -400%;
+    }
+}
+
+/******* Estilização do rodapé ******/
+.fundo-auxiliar{
+    height: 50px;
+}
+.rodapé{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(32, 31, 31);
+}
